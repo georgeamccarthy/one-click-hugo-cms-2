@@ -1,12 +1,29 @@
-baseurl = "/"
+baseURL = "/"
 languageCode = "en-us"
-languageLang = "en"
-title = "Kaldi"
+title = "My Blog"
+theme = "hugo-bearblog"
 
-# RSS, categories and tags disabled for an easy start
-# See configuration options for more details: 
-# https://gohugo.io/getting-started/configuration/#toml-configuration
+# Enable tags
+[taxonomies]
+  tag = "tags"
+  
+# Bear blog is meant to be minimal - disable these for cleaner URLs
 disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 
 [params]
-images = ["img/og-image.jpg"]
+  # The "description" of your website. This is used in the meta data of your generated html.
+  description = "Hugo + Bear Blog + Decap CMS"
+  
+  # The path to your "favicon". This should be a square (at least 32px x 32px) png-file.
+  favicon = "images/favicon.png"
+  
+  # These "images" are used for the structured data templates. This will show up, when
+  # services like Twitter or Slack want to generate a preview of a link to your site.
+  # See https://gohugo.io/templates/internal#twitter-cards and
+  # https://gohugo.io/templates/internal#open-graph.
+  images = ["images/share.png"]
+  
+  # Another "title" :-). This one is used as the site_name on the Hugo's internal 
+  # opengraph structured data template.
+  # See https://ogp.me/ and https://gohugo.io/templates/internal#open-graph.
+  title = "My Blog"
